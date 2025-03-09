@@ -6,6 +6,8 @@ document.querySelector('.abrir').addEventListener('click', (e) => {
         title: "Estamos esperando un bebé",
         icon: "success",
         backdrop: false, // Evita que oscurezca el fondo
+        background: "black",
+        color: "white"
     });
 
     // Detectar si es un evento táctil (móvil) o de ratón (PC)
@@ -22,7 +24,7 @@ document.querySelector('.abrir').addEventListener('click', (e) => {
         document.body.appendChild(emoji);
 
         // Posicionar los emojis
-        let offsetX = Math.random() * -100 - 50;
+        let offsetX = Math.random() * -250 + 50;
         let offsetY = Math.random() * 200 - 50;
         emoji.style.left = `${x + offsetX}px`;
         emoji.style.top = `${y + offsetY}px`;
