@@ -27,10 +27,35 @@ h1{
     padding: 1rem;
     color: black;
     font-weight: bold;
+    
+    border: none;
+    border-radius: 10px;
 }
 .abrir:hover{
     background-color: #839711;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+}
+.emoji {
+    position: absolute;
+    font-size: 2rem;
+    animation: fireworks 2s ease-in-out forwards;
+    z-index: 1999;
+    pointer-events: none;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-300px) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1);
+        opacity: 0;
+    }
 }
