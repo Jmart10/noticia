@@ -12,7 +12,7 @@ document.querySelector('.abrir').addEventListener('click', (e) => {
     let x = e.clientX || (e.touches && e.touches[0].clientX);
     let y = e.clientY || (e.touches && e.touches[0].clientY);
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 40; i++) {
         let emoji = document.createElement('span');
         emoji.classList.add('emoji');
 
@@ -22,8 +22,8 @@ document.querySelector('.abrir').addEventListener('click', (e) => {
         document.body.appendChild(emoji);
 
         // Posicionar los emojis
-        let offsetX = Math.random() * 300 - 50;
-        let offsetY = Math.random() * 100 - 50;
+        let offsetX = Math.random() * -100 - 50;
+        let offsetY = Math.random() * 200 - 50;
         emoji.style.left = `${x + offsetX}px`;
         emoji.style.top = `${y + offsetY}px`;
 
